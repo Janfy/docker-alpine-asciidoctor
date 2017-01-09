@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM alpine:3.5
 
 ENV LIBRARY_PATH=/lib:/usr/lib
 RUN apk add --update --no-cache \
@@ -10,7 +10,7 @@ RUN apk add --update --no-cache \
 	asciidoctor \
 	python && \
     gem install --no-ri --no-rdoc asciidoctor-pdf --pre && \
-    gem install --no-ri --no-rdoc coderay pygments.rb  && \
+    gem install --no-ri --no-rdoc coderay pygments.rb && \
     gem cleanup && \
     apk del \
     	gcc \
