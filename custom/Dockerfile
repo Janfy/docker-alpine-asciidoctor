@@ -1,7 +1,9 @@
-FROM alpine:3.9
+FROM alpine:3.10
 
 ENV LIBRARY_PATH=/lib:/usr/lib
 RUN apk add --update --no-cache \
+	bash \
+	tree \
 	gcc \
 	g++ \
 	make \
