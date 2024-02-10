@@ -2,8 +2,6 @@ FROM alpine:3.19
 
 ENV LIBRARY_PATH=/lib:/usr/lib
 RUN apk add --update --no-cache \
-	bash \
-	tree \
 	gcc \
 	g++ \
 	make \
@@ -11,8 +9,8 @@ RUN apk add --update --no-cache \
 	ruby \
 	asciidoctor \
 	python && \
-    gem install --no-ri --no-rdoc asciidoctor-pdf --pre && \
-    gem install --no-ri --no-rdoc coderay pygments.rb && \
+    gem install --no-document asciidoctor-pdf --pre && \
+    gem install --no-document coderay pygments.rb && \
     gem cleanup && \
     apk del \
     	gcc \
