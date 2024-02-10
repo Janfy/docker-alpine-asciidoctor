@@ -8,7 +8,7 @@ RUN apk add --update --no-cache \
 	ruby-dev \
 	ruby \
 	asciidoctor \
-	python && \
+	python3 && \
     gem install --no-document asciidoctor-pdf --pre && \
     gem install --no-document coderay pygments.rb && \
     gem cleanup && \
