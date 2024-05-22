@@ -1,4 +1,4 @@
-FROM alpine:3.19
+FROM alpine:3.20
 
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
 ENV LIBRARY_PATH=/lib:/usr/lib

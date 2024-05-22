@@ -1,4 +1,4 @@
-FROM alpine:3.19
+FROM alpine:3.20
 
 ENV LIBRARY_PATH=/lib:/usr/lib
 RUN apk add --update --no-cache \
