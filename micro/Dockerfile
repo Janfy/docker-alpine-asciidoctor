@@ -1,4 +1,4 @@
-FROM alpine:3.19
+FROM alpine:3.20
 
 RUN apk add --update --no-cache ruby asciidoctor && \
     gem install --no-ri --no-rdoc coderay && \
