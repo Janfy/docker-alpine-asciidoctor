@@ -1,4 +1,4 @@
-FROM alpine:3.20
+FROM alpine:3.22
 
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
 
